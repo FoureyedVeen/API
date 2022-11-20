@@ -1,2 +1,2 @@
 # API
-Understanding the basics of Javascript fetch 
+Understanding the basics of Javascript fetch operation

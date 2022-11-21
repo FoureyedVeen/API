@@ -7,6 +7,7 @@ async function getapi(url) {
     
     // Storing data in form of JSON
     var data = await response.json();
+    data.length;
     console.log(data);
   
 }
@@ -14,7 +15,7 @@ async function getapi(url) {
 // Calling that async function
 getapi(api_url);
 
-function count(api_url) {
-    return Object.keys(api_url).length;
-    console.log(api_url).length;
-  }
+// function count(api_url) {
+//     return Object.keys(api_url).length;
+//     console.log(api_url).length;
+//   }

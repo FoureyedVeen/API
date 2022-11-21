@@ -13,3 +13,8 @@ async function getapi(url) {
 
 // Calling that async function
 getapi(api_url);
+
+function count(api_url) {
+    return Object.keys(api_url).length;
+    console.log(api_url).length;
+  }

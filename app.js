@@ -9,13 +9,17 @@ async function getapi(url) {
     var data = await response.json();
     data.length;
     console.log(data);
-  
+   
+    // data.forEach(data => console.log("company(name)"));
+    let companyName = data.map(function (element) {
+        // return `${data.company}`;
+        
+        console.log(element.company.name);
+    })
+    
 }
 
 // Calling that async function
 getapi(api_url);
 
-// function count(api_url) {
-//     return Object.keys(api_url).length;
-//     console.log(api_url).length;
-//   }
+

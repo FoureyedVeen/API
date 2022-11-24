@@ -10,16 +10,17 @@ async function getapi(url) {
     data.length;
     console.log(data);
    
-    // data.forEach(data => console.log("company(name)"));
-    let companyName = data.map(function (element) {
-        // return `${data.company}`;
-        
-        console.log(element.company.name);
-    })
+    // using map 
+    // let companyName = data.map(function (element) {
+
+    //     console.log(element.company.name);
+    // })
     
+    data.forEach(element => {
+        console.log(element.company.name);
+    });
 }
 
 // Calling that async function
 getapi(api_url);
-
 
